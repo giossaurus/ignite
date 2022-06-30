@@ -1,8 +1,7 @@
 // JSX = Javascript + XML 
+import { Post } from './Post';
 
-import Post from './Post';
-
-function App() {
+export function App() {
   return (
     <div>
       <Post />
@@ -15,5 +14,4 @@ function App() {
     
   )
 }
- 
-export default App
+
