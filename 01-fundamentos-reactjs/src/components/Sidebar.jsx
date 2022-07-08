@@ -15,7 +15,7 @@ export function Sidebar() {
 
 
                 <strong> Giovanni Della Dea</strong>
-                <span>Web developer</span>
+                <span>Front End Developer</span>
             </div>
 
             <footer>

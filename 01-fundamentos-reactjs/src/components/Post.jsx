@@ -10,7 +10,7 @@ export function Post() {
                     <Avatar src="https://github.com/giossaurus.png" />
                     <div className={styles.authorInfo}>
                         <strong>Giovanni Della Dea</strong>
-                        <span>Web Developer</span>
+                        <span>Front End Developer</span>
                     </div>
                 </div>
 
