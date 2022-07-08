@@ -16,11 +16,11 @@ export function App() {
         <Sidebar />
         <main>
           <Post 
-          author="Giovanni Della Dea" 
+          author="Random Person" 
           content = "Lorem ipsum dolor sit amet consectetur" 
         />
         <Post 
-          author="Giovanni Della Dea" 
+          author="Random Person 2" 
           content = "Lorem ipsum dolor sit amet consectetur" 
         />
         </main>
