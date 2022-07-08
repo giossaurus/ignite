@@ -10,4 +10,3 @@ export function Avatar({ hasBorder = true, src }){
 
     );
 }
-
