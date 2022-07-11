@@ -44,14 +44,15 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post 
-          author="Random Person" 
-          content = "Lorem ipsum dolor sit amet consectetur" 
-        />
-        <Post 
-          author="Random Person 2" 
-          content = "Lorem ipsum dolor sit amet consectetur" 
-        />
+          {posts.map(post => {
+            return (
+              <Post 
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            )
+          })}
         </main>
       </div>
       
