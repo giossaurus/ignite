@@ -36,7 +36,6 @@ export function Post(props) {
                 </footer>
             </form>
 
-
             <div className={styles.commentList}>
                 <Comment />
                 <Comment />
