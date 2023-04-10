@@ -2,7 +2,14 @@ import { Avatar } from './Avatar';
 import { Comment } from './Comment';
 import styles from './Post.module.css';
 
-export function Post({ author }) {
+export function Post({ author, publishedAt }) {
+    const publishedDateFormatted = new Intl.DateTimeFormat('pt-BR', {
+        day: '2-digit',
+        month: 'long',
+        hour: '2-digit',
+        minute: '2-digit',
+    }).format(publishedAt);
+
     return (
         <article className={styles.post}>
             <header>
@@ -14,7 +21,10 @@ export function Post({ author }) {
                     </div>
                 </div>
 
-                <time tittle="11 de Maio às 08:13h "dateTime="2022=05-11 08:13:30"> Publicado há 1h</time>
+                <time tittle="11 de Maio às 08:13h "dateTime="2022=05-11 08:13:30"> Publicado há 1h
+                    {publishedDateFormatted}
+                
+                </time>
             </header>
 
             <div className={styles.content}>
