@@ -7,6 +7,10 @@ import styles from './App.module.css'
 
 import './global.css';
 
+// author: {avatar_url: "", name: "", role: ""}
+// publishedAt: Date
+// content: String
+
 const posts = [
   { 
     id: 1,
