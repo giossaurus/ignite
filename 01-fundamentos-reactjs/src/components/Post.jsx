@@ -5,7 +5,7 @@ import { Avatar } from './Avatar';
 import { Comment } from './Comment';
 import styles from './Post.module.css';
 
-export function Post({ author, publishedAt }) {
+export function Post({ author, publishedAt, content }) {
     const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
         locale: ptBR,
     })
@@ -32,6 +32,13 @@ export function Post({ author, publishedAt }) {
             </header>
 
             <div className={styles.content}>
+                {content.map(line => {
+                    if (line.type === 'paragrpah') {
+                        return <p>{line.content}</p>;
+                    }else if (line.type === 'link') {
+                        return <p><a href="#">{line.content}</a></p>;
+                    }
+                })}
                 
             </div>
 
