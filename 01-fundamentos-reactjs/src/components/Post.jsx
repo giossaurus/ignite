@@ -26,6 +26,7 @@ export function Post({ author, publishedAt, content }) {
         event.preventDefault()
 
         setComments([...comments, newCommentText]);
+        setNewCommentText('');
     }
 
     function handleNEwCommentChange() {
@@ -65,6 +66,7 @@ export function Post({ author, publishedAt, content }) {
                 <textarea 
                     name="comment"
                     placeholder="Deixe um comentario"
+                    value={newCommentText}
                     onChange={handleNewCommentChange}
                 />
                 
